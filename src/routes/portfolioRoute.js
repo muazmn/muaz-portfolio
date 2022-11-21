@@ -1,0 +1,57 @@
+var express = require('express');
+var mongodb = require('mongodb').MongoClient;
+var portfolioRouter = express.Router();
+const http = require('url');
+
+// creating and initializing myURL
+// const myURL = new URL('https://muazmn.github.io/countr');
+// creating and initializing myURL
+const myURL1 = new URL('https://muazmn.github.io/colorGame/');
+const myURL2 = new URL('https://muazmn.github.io/countr/');
+const myURL3 = new URL('http://carrentals.epizy.com/public/');
+
+// getting the serialized URL
+// using href
+const colorGame = myURL1.href;
+const countr = myURL2.href;
+const carrentals = myURL3.href;
+// const  = myURL1.href;
+var socialMediaUrl = [
+    {
+        link: countr
+    },
+    {
+        link: colorGame
+    },
+    {
+        link: carrentals
+    }
+]
+// getting the serialized URL
+// using href
+// const href = myURL.href;
+
+// Display hostname value 
+// console.log(href);
+
+var p_router = function (navMenu) {
+    portfolioRouter.route("/")
+        .get(function (req, res) {
+            var url = 'mongodb://localhost:27017/nodePortfolioApp';//url yang sambung ke database mongodb
+            mongodb.connect(url, function (err, database) {//func connect untuk connect ke database
+                var myDbName = database.db('nodePortfolioApp')
+                var collection = myDbName.collection('projects');
+                collection.find({}).toArray(function (err, results) {
+                    res.render('portfolio', {
+                        title: "PORTFOLIO",
+                        menu: navMenu,
+                        projects: results,
+                        url: socialMediaUrl
+                    })
+                })
+            })
+        })
+    return portfolioRouter;
+}
+
+module.exports = p_router;  
