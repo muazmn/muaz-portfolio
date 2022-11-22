@@ -1,6 +1,6 @@
-package.lock.json
+package-lock.json
 node_modules/*
 .idea/*
 
 images/*
-!images/.gitkeep
+!images/.gitignore
