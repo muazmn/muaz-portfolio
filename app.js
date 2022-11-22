@@ -1,7 +1,9 @@
 var express = require('express');
 const bodyParser = require('body-parser')
 var app = new express();
-var port = 3000;
+var port = process.env.PORT || 3000;
+var session = require('express-session')
+var flash = require('connect-flash');
 app.listen(port, function (err) {
     if (typeof (err) == "undefined") {
         console.log('Your application is running on : ' + port + ' port');
@@ -38,13 +40,22 @@ var contactRouter = require('./src/routes/contactRoute')(navMenu);
 
 const dotenv = require("dotenv").config();
 const nodemailer = require("nodemailer")
-const path = require("path")
+const path = require("path");
+const { request } = require('http');
+const { response } = require('express');
 
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+app.use(session({
+    secret: 'secret',
+    cookie: { maxAge: 60000 },
+    resave: true,
+    saveUninitialized: true
+}));
+app.use(flash());
 
 // async function mainMail(name, email, subject, message) {
 //     const transporter = await nodemail.createTransport({
@@ -89,12 +100,14 @@ app.use('/services', servicesRouter);
 app.use('/portfolio', portfolioRouter);
 
 app.get('/', function (req, res) {
+    const message = req.flash("message")
     res.render('index', {
         title: 'Muaz Portfolio',
         heading1: 'WELCOME TO',
         heading2: "MY PORTFOLIO",
         myJob: "I'M WORK FROM HOME AS A FREELACER",
-        menu: navMenu
+        menu: navMenu,
+        message
     });
 });
 app.post('/contact', (req, res) => {
@@ -121,6 +134,8 @@ app.post('/contact', (req, res) => {
             subject: "Hello ✔", // Subject line
             text: req.body.user_message, // plain text body
         });
+        req.flash("message", "MESSAGE SENT SUCCESSFULLY");
+        res.redirect('/contact');
 
         console.log("Message sent: %s", info.messageId);
         // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
@@ -132,7 +147,7 @@ app.post('/contact', (req, res) => {
 
     main().catch(console.error);
 
-    res.end(req.body.user_message)
+    // res.end(res.redirect('/contact'));
 });
 
 // app.get('/articles', function (req, res) {

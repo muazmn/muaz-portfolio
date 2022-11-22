@@ -61,14 +61,20 @@
       </div> -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <% for( var index=0; index < menu.length; index++ ) { %>
-            <li>
-              <a class="page-scroll" href="<%= menu[index].href %>">
-                <%=menu[index].text %>
-              </a>
-            </li>
+          <% if(message.length> 0) { %>
+            <div class="alert alert-success">
+              <%= message %>
+                <h2>daksjfkl;</h2>
+            </div>
             <% } %>
-              <!-- <a href="#page-top" class="page-scroll">Home</a></li>
+              <% for( var index=0; index < menu.length; index++ ) { %>
+                <li>
+                  <a class="page-scroll" href="<%= menu[index].href %>">
+                    <%=menu[index].text %>
+                  </a>
+                </li>
+                <% } %>
+                  <!-- <a href="#page-top" class="page-scroll">Home</a></li>
           <a href="#services" class="page-scroll">Services</a></li>
           <a href="#about" class="page-scroll">About</a></li>
           <a href="#portfolio" class="page-scroll">Portfolio</a></li>

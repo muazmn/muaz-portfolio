@@ -89,39 +89,50 @@
                     <p>if you want to contact me, please fill in the blanks below, i will respond ASAP and appreciate
                         it.</p>
                 </div>
-                <div class="col-md-8 col-md-offset-2">
-                    <form name="sentMessage" id="contactForm" action="contact" method="post" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" id="name" class="form-control" placeholder="Name">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="email" id="email" class="form-control" placeholder="Email"
-                                        name="user_mail">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
+                <% if(message.length> 0) { %>
+                    <div
+                        style="width: 95%; display: grid; justify-content: center;justify-items: center; position: absolute; margin-top: -35px; overflow: hidden;">
+                        <div class="alert" id="success" style="background-color: #25BAD0; color:  black;">
+                            <%= message %>
                         </div>
-                        <div class="form-group">
-                            <textarea name="user_message" id="message" class="form-control" rows="4"
-                                placeholder="Message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div id="success"></div>
-                        <button type="submit" class="btn btn-default">Send Message</button>
-                    </form>
-                    <div class="social">
-                        <ul>
-                            <li><a href="<%= url[1].link %>"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="<%= url[2].link %>"><i class="fa fa-github"></i></a></li>
-                            <li><a href="<%= url[0].link %>"><i class="fa fa-linkedin"></i></a></li>
-                        </ul>
                     </div>
-                </div>
+                    <div></div>
+                    <% } %>
+                        <div class="col-md-8 col-md-offset-2">
+                            <form name="sentMessage" id="contactForm" action="contact" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control" placeholder="Name">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" id="email" class="form-control" placeholder="Email"
+                                                name="user_mail">
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="user_message" id="message" class="form-control" rows="4"
+                                        placeholder="Message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-default">Send Message</button>
+                            </form>
+                            <div class="social">
+                                <!-- #25BAD0 -->
+                                <!-- transparent -->
+                                <ul>
+                                    <li><a href="<%= url[1].link %>"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="<%= url[2].link %>"><i class="fa fa-github"></i></a></li>
+                                    <li><a href="<%= url[0].link %>"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>

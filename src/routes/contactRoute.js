@@ -28,11 +28,14 @@ var contactRouter = express.Router();
 var c_router = function (navMenu) {
     contactRouter.route("/")
         .get(function (req, res) {
+            const message = req.flash("message")
             res.render('contact', {
                 title: "Muaz Portfolio",
                 menu: navMenu,
-                url: socialMediaUrl
+                url: socialMediaUrl,
+                message
             })
+            // res.send(req.flash('success'))
         })
     return contactRouter;
 }
