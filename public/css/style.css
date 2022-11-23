@@ -273,7 +273,7 @@ header .intro-text {
 #about {
 	overflow-y: hidden;
 	padding-top: 100px;
-	padding-bottom: 185px;
+	padding-bottom: 1px;
 	color: rgba(255, 255, 255, 0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32, 166, 187);
@@ -631,7 +631,7 @@ img.img-circle.team-img {
 }
 
 #contact .overlay {
-	padding: 100px 0 0px 0;
+	padding: 100px 0 30px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.75+100 */
 	background: -moz-linear-gradient(top, rgba(5, 55, 64, 1) 0%, rgba(5, 55, 64, 0.75) 100%);
 	/* FF3.6-15 */
@@ -641,7 +641,7 @@ img.img-circle.team-img {
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#053740', endColorstr='#bf053740', GradientType=0);
 	/* IE6-9 */
-	height: 92vh;
+	/* height: 92vh; */
 }
 
 #contact h3 {
