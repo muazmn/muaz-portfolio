@@ -271,7 +271,9 @@ header .intro-text {
 
 /* About Section */
 #about {
-	padding: 100px 0;
+	overflow-y: hidden;
+	padding-top: 100px;
+	padding-bottom: 185px;
 	color: rgba(255, 255, 255, 0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: rgb(32, 166, 187);
@@ -284,7 +286,6 @@ header .intro-text {
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0);
 	/* IE6-9 */
-	height: 92vh;
 }
 
 #about h2 {
@@ -305,9 +306,8 @@ header .intro-text {
 }
 
 /* Portfolio Section */
-#portfolio,
-#about {
-	padding: 100px 0px 90px 0;
+#portfolio {
+	padding: 100px 0px 140px 0;
 }
 
 /* .over {
@@ -315,7 +315,7 @@ header .intro-text {
 } */
 
 #portfolio {
-	height: 90vh
+	/* height: 100vh; */
 	background: #053740;
 }
 
