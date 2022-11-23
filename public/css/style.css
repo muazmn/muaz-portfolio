@@ -286,6 +286,7 @@ header .intro-text {
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#20a6bb', endColorstr='#25bad0', GradientType=0);
 	/* IE6-9 */
+	height: 92vh
 }
 
 #about h2 {
@@ -307,7 +308,7 @@ header .intro-text {
 
 /* Portfolio Section */
 #portfolio {
-	padding: 100px 0px 140px 0;
+	padding: 100px 0px 240px 0;
 }
 
 /* .over {
