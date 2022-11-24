@@ -105,7 +105,7 @@ app.get('/', function (req, res) {
         title: 'Muaz Portfolio',
         heading1: 'WELCOME TO',
         heading2: "MY PORTFOLIO",
-        myJob: "I'M WORK FROM HOME AS A FREELACER",
+        myJob: "I'M A WEBSITE DEVELOPER",
         menu: navMenu,
         message
     });
