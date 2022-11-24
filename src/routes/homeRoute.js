@@ -12,7 +12,7 @@ var h_router = function (navMenu) {
                 menu: navMenu,
                 heading1: 'WELCOME TO',
                 heading2: "MY PORTFOLIO",
-                myJob: "I'M WORK AS A WEBSITE DEVELOPER",
+                myJob: "I'M A WEBSITE DEVELOPER",
                 message
             })
         });
