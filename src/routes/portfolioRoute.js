@@ -10,7 +10,7 @@ const http = require('url');
 const myURL1 = new URL('https://muazmn.github.io/colorGame/');
 const myURL2 = new URL('https://muazmn.github.io/countr/');
 const myURL3 = new URL('http://carrentals.epizy.com/public/');
-const myURL4 = new URL('https://unitt-calculator.netlify.app/');
+// const myURL4 = new URL('https://unitt-calculator.netlify.app/');
 
 
 // getting the serialized URL
@@ -18,7 +18,7 @@ const myURL4 = new URL('https://unitt-calculator.netlify.app/');
 const colorGame = myURL1.href;
 const countr = myURL2.href;
 const carrentals = myURL3.href;
-const unitCalculator = myURL4.href;
+// const unitCalculator = myURL4.href;
 
 // const  = myURL1.href;
 var socialMediaUrl = [
@@ -28,9 +28,9 @@ var socialMediaUrl = [
     {
         link: colorGame
     },
-    {
-        link: unitCalculator
-    },
+//     {
+//         link: unitCalculator
+//     },
      {
         link: carrentals
     }
