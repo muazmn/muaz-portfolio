@@ -29,11 +29,11 @@ var socialMediaUrl = [
         link: colorGame
     },
     {
-        link: carrentals
-    },
-     {
         link: unitCalculator
     },
+     {
+        link: carrentals
+    }
 ]
 // getting the serialized URL
 // using href
