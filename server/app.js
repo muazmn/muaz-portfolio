@@ -61,8 +61,9 @@ app.post("/send_email", (req, res) => {
             console.log('error bro')
         });
 })
-app.listen(port, () => {
-    console.log(`port is listening at http://localhost:${port}`)
-})
+module.exports = app
+// app.listen(port, () => {
+//     console.log(`port is listening at http://localhost:${port}`)
+// })
 
 // CORS = a module that allows us to transport solid information from front-end to back-end
