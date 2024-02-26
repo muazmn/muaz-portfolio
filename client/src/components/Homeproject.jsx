@@ -37,7 +37,7 @@ function HomeProject(props) {
         </div>
         <div className="md-container imageContainer">
           <Image
-            src={`../../public/images/project/${props.image.web[1]}.png`}
+            src={`images/project/${props.image.web[1]}.png`}
             rounded
             className="projectImage"
           />
