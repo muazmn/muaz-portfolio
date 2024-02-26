@@ -51,7 +51,7 @@ function sendEmail({ receipient_email, subject, message }) {
 //         .catch((error) => res.status(500).send(error.message)
 //     )
 // })
-app.post("api/send_email", (req, res) => {
+app.post("/api/send_email", (req, res) => {
     sendEmail(req.body)
         .then((response) => {
             res.send(response.message)
