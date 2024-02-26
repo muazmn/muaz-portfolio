@@ -35,7 +35,7 @@ function Home() {
           <div className="pt-5">
             <div className="profileImageContainer d-md-flex  justify-content-between">
               <img
-                src="images/profilePicture.jpg"
+                src="/images/profilePicture.jpg"
                 className="profileImage mx-auto mx-md-0 d-flex"
                 alt="..."
               />
