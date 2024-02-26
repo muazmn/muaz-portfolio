@@ -11,7 +11,7 @@ function ProjectCarousel(props) {
         <img
           style={{ objectFit: "contain" }}
           className="d-flex mx-auto bg-dark"
-          src={`images/project/${img}.png`}
+          src={`../../public/images/project/${img}.png`}
           alt="background"
           onDragStart={handleDragStart}
         />
