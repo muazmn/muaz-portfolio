@@ -12,7 +12,7 @@ function ContactForm() {
   const [receipient_email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function sendMail(receipient_email, subject, message) {
+  function sendMail() {
     if (receipient_email && subject && message) {
       axios
         .post("http://localhost:5000/send_email", {
