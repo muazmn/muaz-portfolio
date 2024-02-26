@@ -120,7 +120,7 @@ function Home() {
           <p>
             My name is Ahmad Muaz Aiman, a passionate full-stack software
             developer. My journey in programming has equipped me with a strong
-            foundation in HTML, CSS, JavaScript, Laravel, ReactJS, and other key
+            foundation in HTML, CSS, JavaScript, Laravel, ReactJS, and other
             frameworks. My enthusiasm for coding led me to join an 8-month
             online programming course with Legoom Academy, further solidifying
             my skills and understanding of the field.I am always open to new
