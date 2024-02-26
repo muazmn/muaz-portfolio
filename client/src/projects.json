@@ -35,7 +35,7 @@
     "shortDescription": "My portfolio built with reactJS, bootstrap with the dark blue theme",
     "description": ["this portfolio has been created with ReactJs, JSX, CSS, bootstrap. A lot of animation I created in this site with react motion library.", "in the homepage, there are automatic typewriting text, it has been created with TypeWriter library. For the email form, I create it using nodemailer. "],
     "techStack": ["css", "bootstrap","JSX", "reactJS"],
-    "projectLink": "https://muaz-portfolio-56c8-3vbmyufjl-muazmn.vercel.app/",
+    "projectLink": "https://muaz-portfolio-56c8.vercel.app/",
     "image" : {
             "web":["muaz/1", "muaz/2", "muaz/3"],
             "mobile":[]

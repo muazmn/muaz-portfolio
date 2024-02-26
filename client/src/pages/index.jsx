@@ -101,7 +101,7 @@ function Home() {
           <HashLink
             target="_blank"
             rel="noopener noreferrer"
-            to="../../public/Muaz-Aiman.pdf"
+            to="Muaz-Aiman.pdf"
             download="Muaz-Aiman.pdf"
             className="resumeLink my-text-white
               bold text-decoration-none fs-3"

@@ -25,7 +25,7 @@ function Footer() {
               className="text-blue text-decoration-none"
               target="_blank"
               rel="noopener noreferrer"
-              href="../../public/Muaz-Aiman.pdf"
+              href="Muaz-Aiman.pdf"
               download="Muaz-Aiman.pdf"
             >
               My resume
