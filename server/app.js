@@ -20,6 +20,7 @@ function sendEmail({ receipient_email, subject, message }) {
     return new Promise((resolve, reject) => {
         // we use transporter to send the email
         var transporter = nodemailer.createTransport({
+            secure:true,
             service: "gmail",
             auth: {
                 // refer the previous video to setup these both
