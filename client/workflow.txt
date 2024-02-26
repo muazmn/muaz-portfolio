@@ -1,0 +1,6 @@
+// create animation for homepage like transition or any other transition
+
+// create responsive page 
+// homePage 
+// projectPage 
+// carouselPage 

@@ -1,0 +1,84 @@
+
+[
+    {
+        "id":"1",
+        "projectName": "Docbook",
+        "shortDescription": "An app with multi-cross platform for web and mobile(android).This is an app with doctor appointment management system.Patient need to login first to make an appointment with the selected doctor, patient also can cancel an appointment that has been made.There are also feature for doctor and admin and more.",
+        "description": ["Docbook is an application designed to manage doctor appointments. This project was developed during my eight-month programming course with Legoom Academy and was completed in September 2024.",
+        "This project is a cross-platform solution for both web and Android platforms. The web version was built using Laravel, Blade, and Bootstrap. On the other hand, the Android version was developed using Flutter for the front end and Laravel for the backend.",
+        "The application features has three roles: patient, doctor, and admin. Patients can schedule appointments with their preferred doctors. Admins are responsible for managing all the appointments that have been made. Doctors can monitor all their appointments through their specific accounts."],
+        "techStack": ["css", "bootstrap", "mySql", "laravel","flutter", "laravel"],
+        "projectLink": "",
+        "image" : {
+            "web":["docbook/web/1","docbook/web/2","docbook/web/3","docbook/web/4","docbook/web/5","docbook/web/6","docbook/web/7","docbook/web/8","docbook/web/9","docbook/web/10","docbook/web/11"],
+            "mobile":["docbook/mobile/1","docbook/mobile/2","docbook/mobile/3","docbook/mobile/4","docbook/mobile/5","docbook/mobile/6","docbook/mobile/7","docbook/mobile/8","docbook/mobile/9","docbook/mobile/10","docbook/mobile/11","docbook/mobile/12","docbook/mobile/13","docbook/mobile/14","docbook/mobile/15","docbook/mobile/16","docbook/mobile/17"]
+        },
+        "githubLink": "https://github.com/muazmn/docbook-flutter"
+
+},{
+        "id":"2",
+        "projectName": "Carjack",
+        "shortDescription":"web app with car rental system with login and registration system. User can rent their desired car with specific date. They're also can survey all the car first before rent their desired car.",
+        "description":["carJack is a car rental management system that can help other people to rent their desired car. This website has login and registration feature for every user and more.",
+        "This is my first project using OOPHP, it built with HTML, CSS, JS, bootstrap, PHP with Object Oriental Programming architecture."],
+        "techStack": ["html", "css", "JS", "mySql"],
+        "projectLink": "",
+        "image" : {
+            "web":["carjack/1","carjack/2","carjack/3","carjack/4","carjack/5"],
+            "mobile":[]
+        },
+        "githubLink": "https://github.com/muazmn/carRentals"
+
+},{
+    "id":"3",
+    "projectName": "Muaz Portfolio",
+    "shortDescription": "My portfolio built with reactJS, bootstrap with the dark blue theme",
+    "description": ["this portfolio has been created with ReactJs, JSX, CSS, bootstrap. A lot of animation I created in this site with react motion library.", "in the homepage, there are automatic typewriting text, it has been created with TypeWriter library. For the email form, I create it using nodemailer. "],
+    "techStack": ["css", "bootstrap","JSX", "reactJS"],
+    "projectLink": "muazPortfolio-project-link.com",
+    "image" : {
+            "web":["muaz/1", "muaz/2", "muaz/3"],
+            "mobile":[]
+        },
+    "githubLink": "muazPortfolio-github-link.com"
+
+},{
+    "id":"4",
+    "projectName": "Unit Calculator",
+    "description": ["This project is a straightforward calculator application with features such as converting meters to kilometers, among others. It is constructed using ReactJS and CSS."],
+    "techStack": ["HTML, CSS, JS, reactJS"],
+    "projectLink": "https://unit-calculator-two.vercel.app/",
+    "image" : {
+            "web":["unit-calculator/1"],
+            "mobile":[]
+        },
+    "githubLink": "https://github.com/muazmn/unit-calculator"
+
+},{
+    "id":"5",
+    "projectName": "Timezone App",
+    "description": ["This project, equipped with several features, allows users to get weather information for a specific location. Additionally, it provides details about a chosen country, such as its continent, region, and common language for that country, and more. This project was built using HTML, CSS, and native JavaScript, I'm leverage the OpenWeatherMap API for data retrieval."],
+    "techStack": ["html", "css", "JS"],
+    "projectLink": "https://muazmn.github.io/weather-app",
+    "image" : {
+            "web":["timezone-app/1","timezone-app/2"],
+            "mobile":[]
+        },
+    "githubLink": "https://github.com/muazmn/countr"
+
+},{
+    "id":"6",
+    "projectName": "Color Game",
+    "description": ["This is a straightforward gaming website, constructed using HTML, CSS, and JavaScript. It offers players an engaging challenge to accurately guess a color based on the RGB values provided by the game."],
+    "techStack": ["html", "css", "JS"],
+    "projectLink": "https://muazmn.github.io/colorGame/",
+    "image" : {
+            "web":["color-game/1"],
+            "mobile":[]
+        },
+    "githubLink": "https://github.com/muazmn/colorGame"
+
+}
+]
+
+
