@@ -345,6 +345,7 @@ font-weight: 900;
 
 .carouselImg  img {
     width: 100%;
+    max-height: 210px;
 }
 .carouselImg > h1 {
     /* font-size: 80px; */
