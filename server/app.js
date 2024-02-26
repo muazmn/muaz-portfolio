@@ -3,6 +3,8 @@ const nodemailer = require("nodemailer");
 const app = express();
 const port = 5000; 
 const cors = require('cors');
+require('dotenv').config();
+
 
 app.use(cors())
 app.use(express.json({limit: '25mb'}));
@@ -12,8 +14,8 @@ app.use((req, res, next) => {
     next();
 })
 
-var myemail = 'muazmn001@gmail.com'
-var mypassword = 'jhki clwo ffzw gkxy';
+var myemail = process.env.EMAIL;
+var mypassword = process.env.PASSWORD
 function sendEmail({ receipient_email, subject, message }) {
     return new Promise((resolve, reject) => {
         // we use transporter to send the email

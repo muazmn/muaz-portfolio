@@ -21,7 +21,15 @@ function Footer() {
             >
               muazmn001@gmail.com
             </a>
-            <a className="text-blue text-decoration-none">My resume</a>
+            <a
+              className="text-blue text-decoration-none"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="../../public/Muaz-Aiman.pdf"
+              download="Muaz-Aiman.pdf"
+            >
+              My resume
+            </a>
           </div>
           <div className="footerBorder mt-5"></div>
           <div className="mt-4 justify-content-end d-flex fs-3">

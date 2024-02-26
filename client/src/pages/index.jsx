@@ -118,23 +118,14 @@ function Home() {
         <motion.div variants={variant} initial="hidden" whileInView="visible">
           <p className="bold my-text-white">ABOUT</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias
-            harum reiciendis provident explicabo hic est cupiditate facere quam
-            veritatis ipsa rerum dolor, amet, officia nesciunt aperiam excepturi
-            voluptatum? Harum nisi a, accusamus odit sequi temporibus adipisci
-            reprehenderit nam minus nostrum quos, ad placeat officiis sunt
-            impedit. Cumque animi sapiente error eius dolorem impedit
-            accusantium, quia molestias tenetur dicta aliquid id hic laborum
-            consequatur cupiditate corporis in vero doloribus incidunt ea! Natus
-            debitis commodi repudiandae obcaecati officiis perferendis unde
-            nobis, modi animi, optio blanditiis in. Fugit nesciunt perferendis
-            est, odio dolorem, eum unde vitae quas pariatur facere consequatur
-            laudantium. Cupiditate possimus quibusdam temporibus nostrum
-            excepturi officia, dicta quasi, voluptatibus dolores autem
-            consequatur? Doloribus nesciunt impedit dolor quam saepe, voluptates
-            qui ratione ab facilis cum! Quaerat nemo nulla dolorum similique
-            minus nam rerum nobis dolor asperiores fugiat iste, eos ex commodi
-            in!
+            My name is Ahmad Muaz Aiman, a passionate full-stack software
+            developer. My journey in programming has equipped me with a strong
+            foundation in HTML, CSS, JavaScript, Laravel, ReactJS, and other key
+            frameworks. My enthusiasm for coding led me to join an 8-month
+            online programming course with Legoom Academy, further solidifying
+            my skills and understanding of the field.I am always open to new
+            opportunities and learning experiences. If you have any projects,
+            ideas, or just want to chat, feel free to contact me.
           </p>
         </motion.div>
         <div className="squareHr">
