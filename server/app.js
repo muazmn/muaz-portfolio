@@ -50,7 +50,7 @@ function sendEmail({ receipient_email, subject, message }) {
 //         .catch((error) => res.status(500).send(error.message)
 //     )
 // })
-app.post("/send_email", (req, res) => {
+module.exports = (req, res) => {
     sendEmail(req.body)
         .then((response) => {
             res.send(response.message)
@@ -59,7 +59,7 @@ app.post("/send_email", (req, res) => {
             res.status(500).send(error.message)
             console.log('error bro')
         });
-})
+}
 app.listen(port, () => {
     console.log(`port is listening at http://localhost:${port}`)
 })
