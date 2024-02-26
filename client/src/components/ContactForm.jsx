@@ -15,7 +15,7 @@ function ContactForm() {
   function sendMail() {
     if (receipient_email && subject && message) {
       axios
-        .post("http://localhost:5000/send_email", {
+        .post("https://muaz-portfolio-56c8.vercel.app/send_email", {
           receipient_email,
           subject,
           message,
