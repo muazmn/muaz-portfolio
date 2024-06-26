@@ -29,7 +29,7 @@ function ContactForm() {
   return (
     <>
       <div className="contactFormContainer d-md-flex align-items-center justify-content-center flex-column">
-        <h2 className="text-blue bold text-center">Send me a message!</h2>
+        <h2 className="text-blue bold text-center"> me a message!</h2>
         <p className="text-center">want to say hello? Go ahead.</p>
         <Form className="mt-4">
           <div className="nameEmailContainer d-md-flex justify-content-between">
